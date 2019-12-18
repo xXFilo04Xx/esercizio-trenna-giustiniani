@@ -1,0 +1,24 @@
+﻿<Window x:Class="esercizio_trenna_giustiniani.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:esercizio_trenna_giustiniani"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="874">
+    <Grid x:Name="txtnascita">
+        <Grid.Background>
+            <ImageBrush ImageSource="Image1.png"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="30,10,0,0" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top" Height="65" Width="185" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="185" FontSize="18" FontWeight="Bold" Foreground="White"><Run Text="Cognome:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="30,160,0,0" TextWrapping="Wrap" Text="Data di nascita:" VerticalAlignment="Top" Height="76" Width="185" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="txtnome" HorizontalAlignment="Left" Height="60" Margin="215,10,0,0" TextWrapping="Wrap" Text="Manuel" VerticalAlignment="Top" Width="235"/>
+        <TextBox x:Name="txtcognome" HorizontalAlignment="Left" Height="85" Margin="215,75,0,0" TextWrapping="Wrap" Text="Trenna" VerticalAlignment="Top" Width="235"/>
+        <Button x:Name="btngreet" Content="greet" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" Width="345" Height="169" FontSize="18" FontWeight="Bold" Click="btngreet_Click"/>
+        <Button x:Name="btnprint" IsEnabled="False" Content="print" Margin="380,241,10,10" FontSize="18" FontWeight="Bold" Click="btnprint_Click"/>
+        <CheckBox x:Name="chbacconsento" Content="io acconsento ad accedere alle mie informazioni" HorizontalAlignment="Left" Margin="455,150,-5,0" VerticalAlignment="Top" Height="65" Width="342" FontSize="14" FontWeight="Bold" Foreground="White" Checked="chbacconsento_Checked"/>
+        <DatePicker x:Name="txtnascita1" HorizontalAlignment="Left" Margin="215,160,0,0" VerticalAlignment="Top" Height="76" Width="240" FontSize="20"/>
+        <TextBlock x:Name="txtrisultato" HorizontalAlignment="Left" Height="135" Margin="455,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="411" Foreground="White" FontSize="24"/>
+    </Grid>
+</Window>
